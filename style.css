@@ -1,0 +1,43 @@
+:root {
+    --darkreader-neutral-background: #131516;
+    --darkreader-neutral-text: #d8d4cf;
+    --darkreader-selection-background: #004daa;
+    --darkreader-selection-text: #e8e6e3;
+    --logo-font: my-cool-font;
+}
+@font-face {
+    font-family: my-cool-font;
+    src: url(./Norse-Bold.otf);
+}
+html {
+    background-color: var(--darkreader-neutral-background);
+    color: var(--darkreader-neutral-text);
+font-family: roboto;
+padding: 0;
+margin: 0;
+
+}
+body {
+    height: 100vh;
+
+}
+.main-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 20px solid white;
+
+}
+.sidebar-container {
+    position: relative;
+width: 300px;
+    height  100%;
+
+border  2px solid pink  ;
+
+}
+.background-image {
+    background: url(./nick-iliasov-i0fCUofGjV8-unsplash.jpg);
+    
+}
