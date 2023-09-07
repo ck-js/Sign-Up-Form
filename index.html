@@ -18,20 +18,24 @@
         <div class="form-container">
 <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, labore ex quas vero, aut nulla voluptatem explicabo magni optio saepe maxime blanditiis cumque modi eum deleniti qui itaque velit reprehenderit!</div>
 
-<form action="/create-account" method="post">
+<form action="" method="get">
 
 
-        <div class="form-group">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="first_name"
-            placeholder="John" required />
-        </div>
-    
+        <div class="form-group-container">
+            <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="first_name"
+                placeholder="John" required />
+            </div>
+        
     <div class="form-group">
         <label for="lname">Last Name</label>
         <input type="text" id="lname" name="last_name"
         placeholder="Doe" required >
     </div>
+</div>
+
+<div class="form-group-container">
 <div class="form-group">
     <label for="email">Email</label>
     <input type="email" name="user-email" id="email"
@@ -42,6 +46,9 @@
     <input type="tel" name="user-number" id="number">
 
 </div>
+</div>
+
+<div class="form-group-container">
 <div class="form-group">
     <label for="pwd">Password</label>
     <input type="password" name="user_pwd" id="pwd" required>
@@ -50,12 +57,16 @@
     <label for="confirm-pwd">Confirm Password</label>
     <input type="password" name="confirm_pwd" id="confirm-pwd" required>
 </div>
-
-</form>
+</div>
 
 <div class="form-button">
     <button type="submit">Create Account</button>
 </div>
+
+
+</form>
+
+
 
 
         </div>
