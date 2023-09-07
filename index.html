@@ -20,17 +20,28 @@
 
 <form action="/create-account" method="post">
 
-    <div>
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="first_name"
-        placeholder="John" required />
-    </div>
-    <div>
+
+        <div class="form-group">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="first_name"
+            placeholder="John" required />
+        </div>
+    
+    <div class="form-group">
         <label for="lname">Last Name</label>
         <input type="text" id="lname" name="last_name"
         placeholder="Doe" required >
     </div>
+<div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" name="user-email" id="email"
+    placeholder="example@mail.com" required>
+</div>
+<div class="form-group">
+    <label for="Number">Phone Number</label>
+    <input type="tel" name="user-number" id="number">
 
+</div>
 
 </form>
 
