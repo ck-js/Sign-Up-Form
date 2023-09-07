@@ -53,3 +53,20 @@ top: 150px;
 background-color: rgba(0, 0, 0, 0.6);
 padding: 0.7em 1em;
 }
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+}
+
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 300px;
+}
