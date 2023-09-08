@@ -82,6 +82,7 @@ input {
 opacity: 1;
 
 }
+
 input::placeholder {
     color: var(--input-font-color);
     opacity: 0.7;
@@ -90,8 +91,9 @@ input:focus {
     border: 3px solid;
     }
 input[type='password']:focus:invalid {
-    border: 2px solid green;
+    border: 2px solid red;
 }
+
 
 
 
@@ -100,7 +102,9 @@ input[type='password']:focus:invalid {
 outline: none;
 border: none;
 color: var(--input-font-color);
-    background-color: var(--input-background-color)
+    background-color: var(--input-background-color);
+    cursor: pointer;
+    
 }
 
 
