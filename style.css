@@ -4,7 +4,10 @@
     --darkreader-selection-background: #004daa;
     --darkreader-selection-text: #e8e6e3;
     --logo-font: my-cool-font;
-    --large-fluid-font: calc(1rem + 3vw)
+    --large-fluid-font: calc(1rem + 3vw);
+    --mobile-label-font-size: 1rem;
+    --desktop-label-font-size: 1rem;
+
 }
 @font-face {
     font-family: my-cool-font;
@@ -63,6 +66,12 @@ padding: 0.7em 1em;
     row-gap: 100px;
 }
 
+label {
+    text-transform: uppercase;
+    
+}
+
+
 
 @media (max-width: 600px) {
 form {
@@ -70,24 +79,36 @@ form {
     justify-content: center;
     align-items: center;
     border: 10px solid yellowgreen;
-    column-gap: 100px;
-    flex-direction: column;
+        flex-direction: column;
 flex-wrap: wrap;
 }
 .form-group {
     display: flex;
     flex-direction: column;
-    padding: 5px 100px;
+    padding: 10px 30px;
     
 }
 label {
     order: -1;
     margin-bottom: 5px;
+    font-size: var(--mobile-label-font-size);
 }
 
-input[type='text'] {
+input {
     width: 100%;
+    font-size: 1.2rem;
+    font-weight: bold;
 
+}
+
+.form-button {
+padding: 40px 0 20px 0;
+width: 40%;
+height: 100px;
+}
+.form-button button {
+    width: 100%;
+    height: 100%;
 }
 
 }
