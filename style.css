@@ -93,8 +93,12 @@ input:focus {
 input[type='password']:focus:invalid {
     border: 2px solid red;
 }
-
-
+.valid {
+    border: 3px solid green;
+}
+.invalid {
+    border: 3px solid red;
+}
 
 
 
