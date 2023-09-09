@@ -65,8 +65,21 @@ padding: 0.7em 1em;
 .form-container {
     display: flex;
     flex-direction: column;
-    row-gap: 100px;
+align-items: center;
+    justify-content: center;
+    row-gap: 40px;
+    
 }
+.form-container>div {
+color: white;
+font-size: 1.2rem;
+
+
+}
+.form-container> :first-child {
+    margin-top: 200px;
+}
+
 
 label {
     text-transform: uppercase;
@@ -80,7 +93,7 @@ input {
     background-color: var(--input-background-color);
     color: var(--input-font-color);
 opacity: 1;
-
+border-radius: 5px;
 }
 
 input::placeholder {
@@ -100,17 +113,16 @@ input[type='password']:focus:invalid {
     border: 3px solid red;
 }
 
-
-
 .form-button button {
 outline: none;
 border: none;
 color: var(--input-font-color);
     background-color: var(--input-background-color);
     cursor: pointer;
-    
+    }
+button:hover {
+    border-bottom: 5px solid blue;
 }
-
 
 
 
@@ -120,7 +132,11 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 10px solid yellowgreen;
+border-top: 10px solid;
+border-bottom: 10px solid;
+border-radius: 20px;
+padding: 30px 0 10px 0;
+border-color: blue;
         flex-direction: column;
 flex-wrap: wrap;
 }
@@ -160,8 +176,12 @@ height: 100px;
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 10px solid blue;
-        
+        border-top: 10px solid;
+border-bottom: 10px solid;
+border-radius: 20px;
+border-color: blue;
+padding: 30px 0 10px 0;
+    margin: 0 50px 0 50px;
         flex-direction: column;
     flex-wrap: wrap;
     }
